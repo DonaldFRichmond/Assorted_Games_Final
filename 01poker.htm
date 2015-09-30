@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!begin Insert 1 --> 
+  <head>
+    
+    <title>Video Poker</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="bootstrap-css/bootstrap.min.css"          rel="stylesheet" media="screen">
+  
+    <link href="bootstrap-css/bootstrap-theme.min.css"    rel="stylesheet" media="screen">
+  
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    
+    <!--[if lt IE 9]>
+      
+    <script src="../../assets/js/html5shiv.js">          </script>
+      
+    <script src="../../assets/js/respond.min.js">        </script>
+    
+    <![endif]-->
+  
+
+    <!-- Change following css file -->
+    <link href="css/main01.css"                           rel="stylesheet" media="screen">
+    
+  </head>
+  
+
+
+<center>
+<!-- Change following id -->
+<body id = 'pokerPage' >   
+  <!-- Navbar -->
+    
+  <div class="navbar navbar-inverse navbar-fixed-top">
+      
+  <div class="container">
+        
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          
+      <span class="icon-bar"></span>
+          
+      <span class="icon-bar"></span>
+          
+      <span class="icon-bar"></span>
+        
+    </button>
+        
+    <a class="navbar-brand text-muted" href="#">Video Poker              </a>
+        
+    <div class="collapse navbar-collapse">
+          
+      <ul class="nav navbar-nav navbar-right">
+                   
+        <li class="dropdown">
+              
+          <a data-toggle="dropdown" data-target="#">Other Games<b class="caret"></b></a>
+    
+          <ul class="dropdown-menu">
+  
+            <li><a href="00index.htm"     >Main Menu                   </a></li>            
+      <!--  <li><a href="01poker.htm"     >Video Poker                 </a></li> -->  
+            <li><a href="02blackjack.htm" >Blackjack                   </a></li>
+            <li><a href="03roulette.htm"  >Roulette                  </a></li>
+            <li><a href="04bankcraps.htm" >Bankcraps                   </a></li>
+            <li><a href="05option5.htm"   >Demolition Roller Derby     </a></li>
+            <li><a href="06option6.htm"   >Mack Truck Chicken Challenge</a></li>
+            <li><a href="07option7.htm"   >AD&D: The Day of Judgement  </a></li>
+            <li><a href="08option8.htm"   >All hope abandon, ye who enter here
+                                                                       </a></li>            
+            <li><a href="09about.htm"     >About Page                  </a></li>                      
+          </ul>
+            
+        </li>
+          
+      </ul>
+        
+     </div>
+      
+  </div> <!-- End navbar -->
+
+    
+  </div>
+
+
+<!end Insert 1 --> 
+
+      <h1>Welcome to "Big Ralph" Williams' Video Poker Emporium </h1>
+ 
+
+      <div > <!-- Initial -->  
+	  <table >
+              <table border=0>
+              <tr id='cardRow' >   
+                  <td id = "card00" >
+                    <img src="decks/standard/0000Back.jpg" alt=" " >
+                  </td>
+                  <td id = "card01" > 
+                    <img src="decks/standard/0000Back.jpg" alt=" " >
+                  </td >
+                  <td id = "card02" >
+                    <img src="decks/standard/0000Back.jpg" alt=" " >
+                  </td >
+                  <td id = "card03" >
+                    <img src="decks/standard/0000Back.jpg" alt=" " >
+                  </td >
+                  <td id = "card04" >
+                    <img src="decks/standard/0000Back.jpg" alt=" " >
+                  </td >
+	      </tr>
+              <tr id="checkBoxRow"    >
+                  <td><input type="checkbox" class="box" id="check00"  
+                                value = "" name="check00"  > 
+                      <label for ="check00" class="box" >Discard</label>
+                  </td>
+                  <td><input type="checkbox" class="box" id="check01" 
+                                value = ""  name="check01" >
+                      <label for ="check01" class="box" >Discard</label>
+                  </td>
+                  <td><input type="checkbox" class="box" id="check02" 
+                                value = ""  name="check02" >
+                      <label for ="check02" class="box" >Discard </label>
+                  </td>
+                  <td><input type="checkbox" class="box" id="check03" 
+                                value = ""  name="check03" >
+                      <label for ="check03" class="box" >Discard </label>
+                  </td>
+                  <td><input type="checkbox" class="box" id="check04" 
+                                value = ""  name="check04" >
+                      <label for ="check04" class="box" >Discard </label>
+                  </td>
+	      </tr>
+          </table><br>
+
+          <div   class="group">          
+            <div class="col1" id = 'handsTable'  >
+              <table  > 
+                  <table border=5>              
+                     <tr id="tafelrow" >
+                     <td id="panel1"> 
+                          <p class="ce line">Possible Hands </p>  
+                          <p class="xx line">===========    </p> 
+                          <p class="lj line"> <a class = 'line' id = "hand01" >5 of a Kind    </a></p> 
+                          <p class="lj line"> <a class = 'line' id = "hand02" >Royal Flush    </a></p> 
+                          <p class="lj line"> <a class = 'line' id = "hand03" >Straight Flush </a></p> 
+                          <p class="lj line"> <a class = 'line' id = "hand04" >4 of a Kind    </a></p> 
+                          <p class="lj line"> <a class = 'line' id = "hand05" >Full House     </a></p> 
+                     </td> 
+                     <td id="panel2"> 
+                          <p class="ce line">Payoff         </p>  
+                          <p class="xx line">=========      </p>  
+                          <p class="rj line"> <a class = 'line' id = "odds01" >Not Possible   </a></p> 
+                          <p class="rj line"> <a class = 'line' id = "odds02" >Pays 250 to 1  </a></p> 
+                          <p class="rj line"> <a class = 'line' id = "odds03" >Pays  50 to 1  </a></p>
+                          <p class="rj line"> <a class = 'line' id = "odds04" >Pays  25 to 1  </a></p> 
+                          <p class="rj line"> <a class = 'line' id = "odds05" >Pays   9 to 1  </a></p>  
+                     </td>
+                     <td id="panel3"> 
+                          <p class="ce line">Possible Hands </p>
+                          <p class="xx line">===========    </p> 
+                          <p class="lj line"> <a class = 'line' id = "hand06" >Flush          </a></p>
+                          <p class="lj line"> <a class = 'line' id = "hand07" >Straight       </a></p>
+                          <p class="lj line"> <a class = 'line' id = "hand08" >3 of a Kind    </a></p> 
+                          <p class="lj line"> <a class = 'line' id = "hand09" >Two Pair       </a></p>
+                          <p class="lj line"> <a class = 'line' id = "hand10" >Jacks or better</a></p> 
+                     </td>
+                     <td id="panel4"> 
+                          <p class="ce line">Payoff         </p>
+                          <p class="xx line">=========      </p>
+                          <p class="rj line"> <a class = 'line' id = "odds06" >Pays   6 to 1  </a></p> 
+                          <p class="rj line"> <a class = 'line' id = "odds07" >Pays   4 to 1  </a></p>       
+                          <p class="rj line"> <a class = 'line' id = "odds08" >Pays   3 to 1  </a></p> 
+                          <p class="rj line"> <a class = 'line' id = "odds09" >Pays   2 to 1  </a></p>
+                          <p class="rj line"> <a class = 'line' id = "odds10" >Pays   1 to 1  </a></p> 
+                     </td>
+                     </tr>
+              </table>
+           </div> <!--end of handsTable -->
+
+            <!-- Message screen and Winnings field -->   
+
+            <div class='col2'>
+               <br> 
+
+               <div id = 'col2' >                     
+                 <button id='handDescription' class='display lj' type=''>     _ </button>      
+                 <button id='totalField'      class='display rj' type=''>$ 0.00 </button>
+              </div>
+
+           </div> <!--end of col2 -->
+
+         </div> <!--end of group --><br>
+
+
+ <div id ='deckChoiceTable'>  
+ <div id ='deckChoices' class="deckCHOICES"  >
+   <table><tr>
+          <td colspan='4'><h4>Click a button to choose a deck </h4>
+         </td></tr>
+          <tr><td><button class='deckBttn ce' id='deck1' type='submit' >Standard    </button></td>
+              <td><button class='deckBttn ce' id='deck2' type='submit' >Swim Suit   </button></td>
+              <td><button class='deckBttn ce' id='deck3' type='submit' >Gulf War    </button></td>
+              <td><button class='deckBttn ce' id='deck4' type='submit' >Harry Potter</button></td>     
+         </tr>
+   </table>
+
+</div> 
+</div>
+      <div id='controlButtons'>   
+         <!-- 4 controlling buttons -->
+  
+         <button id="btn1"  class="bttn-cntl" type="submit" >Start                  </button>
+         <button id="btn2"  class="bttn-cntl" type="submit" >Discard indicated Cards</button>
+         <button id="btn4"  class="bttn-cntl" type="submit" >Change Amount of Bet   </button>
+         <button id="btn3"  class="bttn-cntl" type="submit" >Start again            </button>
+     </div> 
+
+     </div> <!-- end of Initial --> 
+
+   <!begin Insert 2 --> 
+
+   <!-- Modal  -->
+
+   <!-- <a class="btn btn-default btn-lg" data-toggle="modal" href="#textModal" >Click for table </a>  --> 
+
+   <div class="modal fade"  id="textModal">
+      <div class ="modal-dialog">
+	<div class="modal-content">
+           <div class="modal-body"> 
+             <form class="form-inline">
+               <div  class="form-group">
+                  <table>
+                      <tr> <td colspan = '3' class='ce'>Possibillities </td>
+                      </tr>
+                      <tr> <td colspan = '3' class='ce'>Note:  Odds based on 36 divided by total numbers bet upon. </td>
+                      </tr>
+                      <tr><td class='lj'> Any single number </td> 
+                          <td>__________</td>
+                          <td class='rj'> pays 36 to 1 </td>
+                      </tr> 
+                
+                  </table>    
+               </div>
+               <button type="submit" class="btn btn-primary" data-dismiss="modal">
+                       Click to dismiss Odds Table
+               </button>
+             </form>
+           </div>
+        </div>
+      </div>
+   </div>
+
+   <!-- End Modal -->
+
+   <!end Insert 2 --> 
+  
+   <footer>
+              <li class = "footeritem" ><a href="00index.htm"  id = "returnLink">
+                                       Return to Main Menu Page                </a></li>
+              <p class =  "footeritem" id = "copyright">            
+                                       &copy; 2017 The Mad Thinker             </p>
+   </footer>
+
+   <!begin Insert 3 --> 
+   <!change following js file --> 
+   <script src="javascript/jspage01.js"          ></script> 
+  
+   <script src="http://code.jquery.com/jquery.js"></script>
+    
+   <script src="bootstrap-js/bootstrap.min.js">   </script>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+   <!end Insert 3 -->   
+          
+   </body>
+   </center>
+</html>

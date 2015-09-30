@@ -1,0 +1,249 @@
+
+@import url('main99.css');
+
+/****************************************
+  CARD IMAGES in table
+  (not centered except by margin settings)
+ ****************************************/
+
+ li                 {   
+   display          :  inline-block;
+}
+
+   
+img                 {
+  border	    :  5px solid black;
+  max-height        :  100%;
+  max-width         :  100%;					  
+/*  margin-right      :  16px; 
+  margin-left       :  15px; */
+}
+
+/*cardRow is background behind card images */
+
+#cardRow            {
+  background-color  :  lightblue;
+}
+
+/*****************************************
+  CHECKBOXES in table
+ *****************************************/
+
+#checkBoxRow        {
+  max-height        :  100%;
+  max-width         :  100%;
+  background-color  :  red;
+  text-align        :  center;
+  font-size         :  1.5em;
+  font-weight       :  bold;
+}
+
+input[type="checkbox"]:checked + label
+                    { 
+  color             :  white;
+}
+
+/********************************
+  Button is used as a display field
+  to list hands and their payoffs 
+ ********************************/
+
+#panel1, #panel3    {
+ background-color   :  seagreen;
+ color              :  black;
+}
+
+#panel2, #panel4    {
+ background-color   :  yellow;
+}
+
+#tafelrow           {
+  color             :  black;
+  font-size         :  1.3em;
+  font-weight       :  4000; 
+}
+
+.line               {
+ line-height        :  8px;
+ color              :  black;
+}
+
+/****************************************
+  Two buttons used as display fields 
+  1st describes hand generated and payoff; 
+  2nd indicates total winnings this session
+ ****************************************/
+
+#handDescription, #totalField         
+                    {
+  margin-bottom     :  2px;
+  color             :  black;
+  font-size         :  2.8em;
+  font-weight       :  bold;
+  border            :  5px solid black;  
+  width             :  550px; 
+} 
+
+#handDescription    {
+  margin-top        :  -20px;
+  background-color  :  white;
+}
+
+/********************************
+  Sets colors for each Control
+ ********************************/
+
+#btn1               {  /* start button */
+  background-color  :  black;
+  color             :  white;  
+ }
+
+#btn2               {  /* discard button */
+  background-color  :  darkblue;
+  color             :  white; 
+ }
+
+#btn3               {  /* Change Bet button */
+  background-color  :  red;
+  color             :  white;
+ }
+ 
+#btn4               {  /* start again button */
+  background-color  :  yellow;
+  color             :  black;
+ }
+
+#btn1[enabled], #btn2[enabled], #btn3[enabled], #btn4[enabled]
+                    {
+  text-transform    :  uppercase; 
+
+ }
+
+#btn1[disabled], #btn2[disabled], #btn3[disabled], #btn4[disabled]
+                    {
+  opacity           :  0.65; 
+ 
+
+ }
+
+/********************************
+  Sets other features for all buttons
+ ********************************/
+
+.bttn-cntl              {
+  font-size         :  1em;
+  font-style        :  bold;
+  margin            :  10px;
+  width             :  21%; 
+  border            :  12px 0px 12 solid black;
+  padding-top       :  12px;
+  padding-bottom    :  20px; 
+  height            :  55px;
+  border-radius     :  75%;
+}            
+
+/********************************
+  Sets hand and payoff list and
+  display fields in separate columns
+ ********************************/
+
+.col1, .col2	    {
+	width       : 48%;
+}
+
+.col1               {
+	float       : left;
+}
+
+.col2               {
+	float       : right;
+}
+
+.group:after        {
+  content           : "";
+  display           : table;
+  clear             : both;
+}
+
+.footeritem         {
+  font-size         : 1.4em;
+}
+
+#deckChoices        {
+   display          :  none;
+}
+
+  .deckCHOICES      {
+   width            :  50%;
+   font-style       :  bold;
+   font-size        :  1em;
+   background-color :  white;
+}
+
+ .deckBttn          {
+   width            :  100%;
+   font-style       :  bold;
+   margin-top       :  -30px;
+   font-size        :  1em;
+   color            :  white;
+   background-color :  black; 
+}
+
+@media (max-width: 1100px)   {
+/*h1                {
+  font-size         :  1.0em;
+  }  */
+  .box              {
+  font-size         :  .8em;
+  }
+  #tafelrow         {
+  font-size         :  1.0em;
+  }
+  #handDescription, #totalField         
+                    {
+  margin            :  5px 0 5px;
+  font-size         :  2.2em;
+  border            :  2px solid black;  
+  width             :  350px; 
+  } 
+  .bttn              {  
+  font-size         :  1em;
+  width             :  17%;
+/*  display           :  block; */
+  }  
+}
+
+@media (max-width:   850px)   {
+  .col1, .col2      {
+     width          : 100%;
+     float          : left;
+  } 
+  .box              {
+  font-size         :  0.5em;
+  }
+  #tafelrow         {
+  width             :  200px; 
+  font-size         :  .8em;
+  }
+  .line             {
+   line-height      :  5px;
+  }
+
+  #handDescription, #totalField         
+                    {
+  font-size         :  1.4em;
+  width             :  275px; 
+  }
+  #totalField       {
+   margin-bottom    :  5px;  
+  }
+  .bttn-cntl        {
+      height        :  25px;
+      font-size     :  .8em;
+      margin-top    :  0;
+      margin-bottom :  10;
+      border        :  0; 
+      width         :  70%;
+      border-radius :  20%;
+  }
+}

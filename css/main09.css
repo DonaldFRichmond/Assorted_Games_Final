@@ -1,0 +1,53 @@
+@import url('main99.css');
+
+img                 {
+  border	    :  5px solid black;
+  max-height        :  100%;
+  max-width         :  100%;					  
+  margin-right      :  0 20px 0 50px;
+}
+
+.col1               {
+	width       : 30%;
+	float       : left;
+}
+
+.col2               {
+	width       : 60%;
+	float       : right;
+        font-size   :  1.5em;
+        text-align  : justify;
+        margin-right: 50px;
+        background-color: white;
+        padding     :  15px;
+}
+
+.group:after        {
+  content           : "";
+  display           : table;
+  clear             : both;
+}
+
+.socialMedia        {
+  height            : 40px;
+  width             : 40px;
+  border            : 1px;
+}
+
+/********************************
+ Sets footer features
+ ********************************/
+
+nav li  {
+  display           :  inline-block;
+}
+
+@media (max-width:   850px)   {
+  .col1, .col2      {
+     margin-left    : 30px;
+     width          : 85%;
+     float          : left;
+  } 
+
+}
+

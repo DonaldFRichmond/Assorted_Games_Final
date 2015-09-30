@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+
+<!begin Insert 1 --> 
+  <head>
+    
+    <title>Bankcraps</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="bootstrap-css/bootstrap.min.css"          rel="stylesheet" media="screen">  
+    <link href="bootstrap-css/bootstrap-theme.min.css"    rel="stylesheet" media="screen"> 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    
+    <!--[if lt IE 9]>
+      
+    <script src="../../assets/js/html5shiv.js">          </script>
+      
+    <script src="../../assets/js/respond.min.js">        </script>
+    
+    <![endif]-->
+  
+
+    <!-- Change following css file -->
+    <link href="css/main04.css"                           rel="stylesheet" media="screen">
+    
+  </head>
+  
+
+  <!-- Change following id -->
+  <center>
+  <body id = "bankcrapsPage" >
+    
+  <!-- Navbar -->
+    
+  <div class="navbar navbar-inverse navbar-fixed-top">
+      
+  <div class="container">
+        
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          
+      <span class="icon-bar"></span>
+          
+      <span class="icon-bar"></span>
+          
+      <span class="icon-bar"></span>
+        
+    </button>
+        
+    <a class="navbar-brand text-muted" href="#">Bankcraps               </a>
+        
+    <div class="collapse navbar-collapse">
+          
+      <ul class="nav navbar-nav navbar-right">
+                   
+        <li class="dropdown">
+              
+          <a data-toggle="dropdown" data-target="#">Other Games<b class="caret"></b></a>
+    
+          <ul class="dropdown-menu">
+  
+            <li><a href="00index.htm"     >Main Menu                   </a></li>            
+            <li><a href="01poker.htm"     >Video Poker                 </a></li>  
+            <li><a href="02blackjack.htm" >Blackjack                   </a></li>
+            <li><a href="03roulette.htm"  >Roulette                    </a></li>
+      <!--  <li><a href="04bankcraps.htm" >Bankcraps                   </a></li> -->
+            <li><a href="05option5.htm"   >Demolition Roller Derby     </a></li>
+            <li><a href="06option6.htm"   >Mack Truck Chicken Challenge</a></li>
+            <li><a href="07option7.htm"   >AD&D: The Day of Judgement  </a></li>
+            <li><a href="08option8.htm"   >All hope abandon, ye who enter here
+                                                                       </a></li>            
+            <li><a href="09about.htm"     >About Page                  </a></li>                      
+          </ul>
+            
+        </li>
+          
+      </ul>
+        
+     </div>
+      
+  </div> 
+
+    
+  </div>
+ <!-- End navbar -->
+
+<!end Insert 1 --> 
+
+
+    <header>
+        <h1>The legendary "Initates only" Bank Craps Parlor</h1>
+    </header>
+      <div id="largeTable">    
+      <table > <table border=0 > 
+
+<!--  row  1 -->
+           <tr  class="topRow"> 
+             <td colspan = '15' class = 'tile'        >                 </td> 
+             <td colspan = '10' class = 'tile border ce' >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ </td>
+             <td colspan = '15' class = 'tile '       >                 </td>  
+           </tr>
+
+<!--  row  2 -->
+           <tr  >
+             <td colspan = '16' class = 'tile border ce' >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</td>
+              
+             <td colspan = '8'  class = 'tile fieldbackground lbl ce xx'  >Selected Doubles </td> 
+                            
+             <td colspan = '16' class = 'tile border ce' >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</td> 
+           </tr>
+
+<!--  row  3    -->
+           <tr  >
+             <td                class = 'tile border ce' >$$$                </td> 
+             <td colspan = '2' rowspan = '3' 
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet03Left' > 3  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet04Left' > 4  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet05Left' > 5  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet06Left' > 6  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet08Left' > 8  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet09Left' > 9  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet10Left' >10  </button>      
+            </td>
+             <td class = 'tile border ce' >$$$    </td> 
+<!--  begin center   8 columns width  odds labels extend to rows 3 - 6 -->
+
+             <td rowspan = '4' > 
+                 <button class="tile   oddsLabel rr ce xl"  type="" >30-1  </button>   
+             </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double02' > 2  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double04' > 4  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double06' > 6  </button>      
+            </td>
+             <td  rowspan = '4'>  
+                 <button class="tile oddsLabel rl ce xl"  type="" >30 - 1  </button> 
+            </td>
+<!--  leaving center   -->
+             <td class = 'tile border ce' >$$$  </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet10Right' >10  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet09Right' > 9  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet08Right' > 8  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet06Right' > 6  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet05Right' > 5  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet04Right' > 4  </button>      
+            </td>
+             <td colspan = '2' rowspan = '3'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet03Right' > 3  </button>      
+            </td>
+             <td class = 'tile border ce' > $$$ </td> 
+           </tr>
+
+<!--  row  4   supplies border tiles not requested in row 3 -->
+           <tr> 
+             <td               class = 'tile border ce' >$$$  </td>
+
+             <td               class = 'tile border ce' >$$$  </td>
+
+             <td               class = 'tile border ce' >$$$  </td>
+
+             <td               class = 'tile border ce' >$$$  </td>
+           </tr>
+
+<!--  row  5 -->
+           <tr> 
+             <td               class = 'tile border ce' > $$$    </td> 
+
+             <td               class = 'tile border ce' > $$$    </td> 
+
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double08' > 8  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double10' >10  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double12' >12  </button>      
+            </td>
+             <td               class = 'tile border ce' > $$$    </td> 
+             <td               class = 'tile border ce' > $$$    </td> 
+
+           </tr>
+<!--  row  6 -->
+           <tr  >
+             <td               class = 'tile border ce'          >$$$    </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >15 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 8 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 7 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 6 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 7 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 8 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >15 - 1 </td>  
+             <td               class = 'tile border ce' > $$$            </td>    
+
+             <td               class = 'tile border ce' > $$$            </td> 
+             <td colspan = '2' class = 'tile   oddsLabel ce' >15 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 8 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 7 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 6 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 7 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 8 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >15 - 1 </td>
+             <td colspan = '1' class = 'tile border ce' > $$$           </td>
+           </tr>
+<!--  row  7 background left and right, top of doubles -->
+            <tr>
+             <td                class = 'tile border ce'     >$$$   </td>
+             <td colspan = '14' class = 'tile fieldbackground'    > </td>
+             <td                class = 'tile border ce'     >$$$   </td>   
+ 
+             <td rowspan = '2'>
+                 <button  class="tile   oddsLabel rr ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '6'  rowspan = '2' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit" id = 'doubles' >Doubles              </button> </td> 
+             <td rowspan = '2' colspan = '1'> 
+                 <button class="tile   oddsLabel  rl ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$   </td> 
+             <td colspan = '14' class = 'tile fieldbackground'    > </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$   </td>
+ 
+<!--  row  8 background left and right, bottom of doubles -->
+           <tr  >
+             
+<!--  8 center cells carried down -->   
+             <td                               class = 'tile border ce'          >$$$      </td>
+             <td colspan  = '2'  rowspan = '2' id = 'Twoor12' class = 'tile fieldbackground ce' >12</td>
+             <td colspan  = '10'               class = 'tile fieldbackground'    >         </td>
+             <td colspan  = '2'  rowspan = '2' id = 'Twoor12' class = 'tile fieldbackground ce' > 2</td>
+             <td colspan  = '1'                               class = 'tile border ce'     > $$          </td> 
+             <td colspan  = '1'                               class = 'tile border ce'     > $$$         </td> 
+             <td colspan  = '2'  rowspan = '2' id = 'Twoor12' class = 'tile fieldbackground ce' > 2</td>
+             <td colspan  = '10'               class = 'tile fieldbackground'    >         </td> 
+             <td colspan  = '2'  rowspan = '2' id = 'Twoor12' class = 'tile fieldbackground ce' >12</td>
+             <td                               class = 'tile border ce'          >$$$      </td>
+           </tr>
+           <tr  >
+             <td               class = 'tile border ce'     >$$$              </td>
+             <td colspan = '2' rowspan = '2' class = 'tile fieldbackground'    >            </td>
+             <td colspan = '6' rowspan = '1' class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'leftField' >Field   </button> </td> 
+             <td colspan = '2' rowspan = '2' class = 'tile fieldbackground'    >            </td> 
+             <td               class = 'tile border ce'     >$$$              
+             <td rowspan = '2' colspan = '1' > 
+                 <button  class="tile   oddsLabel rr ce "  type="" >15 - 1  </button> </td> 
+             <td colspan = '6'  rowspan = '2' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit" id = 'number11' >11  </button> </td> 
+             <td rowspan = '2' colspan = '1'>
+                 <button class="tile   oddsLabel rl ce"    type="" >15 - 1  </button> </td>        
+             
+             <td                class = 'tile border ce'     >$$$        </td>
+             <td colspan = '2' rowspan = '2' class = 'tile fieldbackground' > </td>
+             <td colspan = '6' rowspan = '1' class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'rightField' >Field   </button> </td>            
+             <td colspan = '2' rowspan = '2' class = 'tile fieldbackground'    >                  </td> 
+  
+             <td               class = 'tile border ce'     >$$$              </td>  
+
+           </tr>
+           <tr  >  
+             <td               class = 'tile border ce'     >$$$               </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >2 to 1       </td>
+             <td colspan = '6' class = 'tile   oddsLabel ce' >Pays 1 to 1  </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >2 to 1       </td>
+             <td               class = 'tile border ce'     >$$$               </td> 
+
+             <td               class = 'tile border ce'     >$$$               </td> 
+             <td colspan = '2' class = 'tile   oddsLabel ce' >2 to 1       </td>
+             <td colspan = '6' class = 'tile   oddsLabel ce' >Pays 1 to 1  </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >2 to 1       </td>
+             <td               class = 'tile border ce'     >$$$               </td>         
+
+           </tr>
+
+           <tr  >
+ 
+             <td colspan = '3'  class = 'tile border ce' >$$$$$$$$       </td> 
+             <td colspan = '10'  rowspan = '2' class = 'tile fieldbackground ce' >3    5    9    10    11</td>
+             <td colspan = '3'  class = 'tile border le' >$$$$$$$$$$$$    </td>
+             <td               rowspan = '2'>
+                 <button class="tile   oddsLabel rr ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '6'  rowspan = '2' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit" id = 'number07' >Lucky 7 </button> </td> 
+             <td                rowspan = '2'>
+                 <button class="tile   oddsLabel rl ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '3'  class = 'tile border le' >$$$$$$$$$$$$    </td> 
+
+             <td colspan = '10'  rowspan = '2' class = 'tile fieldbackground ce' >11    10    9    5    3  </td>
+ 
+             <td colspan = '3'  class = 'tile border ce' >$$$$$$$$       </td>
+ 
+          <tr  >
+             <td colspan = '2'  class = 'tile'               >           </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>
+
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td> 
+             <td colspan = '1'  class = 'tile'               >           </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>  
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>  
+             <td colspan = '1'  class = 'tile'               >           </td> 
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td> 
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>
+             <td colspan = '2'  class = 'tile'               >           </td>         
+
+           </tr>
+
+           <tr  >
+             <td colspan = '2'  class = 'tile'               >           </td>
+             <td colspan = '12' class = 'tile border ce'     >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</td>
+             <td colspan = '1'  class = 'tile blank'         >XXX        </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>  
+
+             <td               rowspan = '2'>
+                  <button class="tile   oddsLabel rr ce"  type="" >7 - 1  </button>      </td>
+             <td colspan = '6' class = 'tile   oddsLabel fieldbackground ce' >Craps      </td>
+             <td               rowspan = '2'>
+                 <button class="tile   oddsLabel rl ce"  type="" >7 - 1   </button>      </td>
+
+             <td colspan = '1'  class = 'tile border ce'     >$$$         </td>
+             <td colspan = '1'  class = 'tile blank'         >XXX         </td>
+             <td colspan = '12' class = 'tile border ce'     >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</td> 
+             <td colspan = '2'  class = 'tile'               >            </td>  
+
+           </tr>
+
+             <td colspan = '15' class = 'tile'               >           </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>              
+ 
+             <td colspan = '6' rowspan = '1' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit"  id = 'craps'   >2, 3, 12</button></td> 
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>
+             <td colspan = '15' class = 'tile'               >           </td>
+             
+           </tr>
+
+           <tr  > 
+             <td colspan = '15' class = 'tile'               >           </td>
+             <td colspan = '10' class = 'tile border ce'     >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</td>
+             <td colspan = '15' class = 'tile'               >           </td>
+           </tr>
+      </table>
+      </div>
+
+
+      <div id="smallTable" class="topRow">
+      <table > <table border=0 > 
+<!--  row  1 -->
+           <tr  > 
+             <td colspan = '15' class = 'tile'        >                 </td> 
+             <td colspan = '10' class = 'tile border ce' >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ </td>
+             <td colspan = '15' class = 'tile '       >                 </td>  
+           </tr>
+
+<!--  row  2 -->
+           <tr  >
+             <td colspan = '15' class = 'tile'        >                 </td> 
+             <td colspan = '1'  class = 'tile border ce' >$$$</td>
+              
+             <td colspan = '8'  class = 'tile   fieldbackground lbl ce'  >Selected Doubles </td> 
+             <td colspan = '1'  class = 'tile border ce' >$$$</td>
+             <td colspan = '15' class = 'tile'        >                 </td>                             
+           </tr>
+
+<!--  row  3    -->
+           <tr  > 
+             <td colspan = '15' class = 'tile'        >                      </td> 
+             <td class   = 'tile border ce' >$$$    </td> 
+<!--  begin center   8 columns width  odds labels extend to rows 3 - 6 -->
+
+             <td rowspan = '4' > 
+                 <button class="tile   oddsLabel rr ce xl"  type="" >30 - 1  </button>   
+             </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double02ST'> 2  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double04ST'> 4  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double06ST'> 6  </button>      
+            </td>
+             <td  rowspan = '4'>  
+                 <button class="tile   oddsLabel rl ce xl"  type="" >30 - 1  </button> 
+            </td>
+<!--  leaving center   -->
+             <td class = 'tile border ce' >$$$  </td>
+             <td colspan = '16' class = 'tile'        >                      </td> 
+
+           </tr>
+
+<!--  row  4   supplies border tiles not requested in row 3 -->
+           <tr>
+             <td colspan = '15' class = 'tile'        >                      </td>  
+
+             <td               class = 'tile border ce' >$$$  </td>
+ 
+             <td               class = 'tile border ce' >$$$  </td>
+             <td colspan = '15' class = 'tile'        >                      </td>  
+           </tr>
+
+<!--  row  5 -->
+           <tr> 
+             <td colspan = '15' class = 'tile'        >                      </td> 
+             <td               class = 'tile border ce' > $$$    </td>
+           <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double08ST'> 8  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double10ST'>10  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'double12ST'>12  </button>      
+            </td> 
+             <td               class = 'tile border ce' > $$$    </td> 
+             <td colspan = '15' class = 'tile'          >        </td>
+           </tr>
+<!--  row  6 -->
+           <tr  >
+             <td colspan = '15' class = 'tile'          >        </td> 
+             <td               class = 'tile border ce' > $$$            </td>    
+             <td               class = 'tile border ce' > $$$            </td> 
+             <td colspan = '15' class = 'tile'          >        </td> 
+<!--  row  7 background left and right, top of doubles -->
+           </tr>
+            <tr>
+             <td colspan = '15' class = 'tile'               >      </td> 
+             <td                class = 'tile border ce'     >$$$   </td>   
+ 
+             <td rowspan = '2'>
+                 <button  class="tile   oddsLabel rr ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '6'  rowspan = '2' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit" id = 'doublesST'>Doubles       </button> </td> 
+             <td rowspan = '2' colspan = '1'> 
+                 <button class="tile   oddsLabel  rl ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$   </td> 
+             <td colspan = '15' class = 'tile'               >      </td> 
+ 
+<!--  row  8 background left and right, bottom of doubles -->
+           <tr  >
+             
+<!--  8 center cells carried down -->
+             <td colspan  = '15' class = 'tile'          >        </td>    
+             <td colspan  = '1'                               class = 'tile border ce'     > $$$         </td> 
+             <td colspan  = '1'                               class = 'tile border ce'     > $$$         </td> 
+             <td colspan  = '15' class = 'tile'          >        </td>    
+           </tr>
+           <tr  >
+             <td colspan = '15' class = 'tile'          >        </td>    
+             <td               class = 'tile border ce'     >$$$              
+             <td rowspan = '2' colspan = '1' > 
+                 <button  class="tile   oddsLabel rr ce "  type="" >15 - 1  </button> </td> 
+             <td colspan = '6'  rowspan = '2' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit" id = 'number11ST'>11                    </button> </td> 
+             <td rowspan = '2' colspan = '1'>
+                 <button class="tile   oddsLabel rl ce"    type="" >15 - 1  </button> </td>        
+             
+             <td                class = 'tile border ce'     >$$$       </td>
+             <td colspan = '15' class = 'title'              >        </td>    
+
+           </tr>
+           <tr  >
+             <td colspan = '15' class = 'tile'          >        </td>   
+
+             <td               class = 'tile border ce'     >$$$               </td> 
+
+             <td               class = 'tile border ce'     >$$$               </td>
+             <td colspan = '15' class = 'tile'          >        </td>   
+           </tr>
+
+           <tr  >
+             <td colspan = '15' class = 'tile'          >        </td>  
+             <td colspan = '1'  class = 'tile border le' >$$$    </td>
+             <td               rowspan = '2'>
+                 <button class="tile   oddsLabel rr ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '6'  rowspan = '2' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit" id = 'number07ST'>Lucky 7            </button> </td> 
+             <td                rowspan = '2'>
+                 <button class="tile   oddsLabel rl ce"  type="" >6 - 1  </button> </td>
+             <td colspan = '1'  class = 'tile border le' >$$$    </td>
+             <td colspan = '15' class = 'tile'          >        </td>   
+          <tr  >
+             <td colspan = '15' class = 'tile'               >           </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>
+
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td> 
+             <td colspan = '15' class = 'tile'               >           </td>  
+
+           </tr>
+
+           <tr  >
+             <td colspan = '15'  class = 'tile'               >          </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>  
+
+             <td               rowspan = '2'>
+                  <button class="tile   oddsLabel rr ce"  type="" >7 - 1  </button>      </td>
+             <td colspan = '6' class = 'tile   oddsLabel fieldbackground ce' >Craps      </td>
+             <td               rowspan = '2'>
+                 <button class="tile   oddsLabel rl ce"  type="" >7 - 1   </button>      </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>
+             <td colspan = '15'  class = 'tile'               >            </td>  
+
+           </tr>
+
+             <td colspan = '15'  class = 'tile'              >           </td>
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>              
+ 
+             <td colspan = '6' rowspan = '1' class = 'tile bttn' >
+                 <button class="tile bttn"  type="submit" id = 'crapsST'>2, 3, 12                       </button>      </td> 
+             <td colspan = '1'  class = 'tile border ce'     >$$$        </td>
+             <td colspan = '15'  class = 'tile'              >           </td>
+             
+           </tr>
+
+           <tr  > 
+             <td colspan = '15'  class = 'tile'              >           </td>
+             <td colspan = '10' class = 'tile border ce' >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</td>
+             <td colspan = '15'  class = 'tile'              >           </td>
+           </tr>
+      </table>
+
+      <table>
+           <tr  >
+             <td                class = 'tile border ce' >$$$                </td> 
+             <td colspan = '2' rowspan = '2' 
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet03ST' > 3  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet04ST' > 4  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet05ST' > 5  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet06ST' > 6  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet08ST' > 8  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet09ST' > 9  </button>      
+            </td>
+             <td colspan = '2' rowspan = '2'
+                 class = 'tile bttn' > 
+                 <button class="tile bttn"  type="submit" id = 'bet10ST' >10  </button>      
+            </td>
+             <td class = 'tile border ce' >$$$    </td> 
+           </tr>
+
+<!--  row  5 -->
+           <tr> 
+             <td               class = 'tile border ce' > $$$    </td> 
+
+             <td               class = 'tile border ce' > $$$    </td> 
+           </tr>
+<!--  row  6 -->
+           <tr  >
+             <td                class = 'tile border ce'  >$$$           </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >15 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 8 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 7 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 6 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 7 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' > 8 - 1 </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >15 - 1 </td>  
+             <td               class = 'tile border ce' > $$$            </td>    
+  
+           <tr  >
+             <td               class = 'tile border ce'     >$$$              </td>
+             <td colspan = '2' rowspan = '1' id = 'Twoor12' class = 'tile   fieldbackground ce' >12</td>
+             <td colspan = '2' rowspan = '2' class = 'tile fieldbackground'    >             </td>
+             <td colspan = '6' rowspan = '1' class = 'tile bttn' >  
+                 <button class="tile bttn"  type="submit" id = 'fieldST' >Field   </button>   </td> 
+             <td colspan = '2' rowspan = '2' class = 'tile fieldbackground'    >             </td>
+             <td colspan = '2'  rowspan = '1' id = 'Twoor12' class = 'tile   fieldbackground ce' > 2</td> 
+             <td               class = 'tile border ce'     >$$$            
+
+           </tr>
+           <tr  >  
+             <td               class = 'tile border ce'     >$$$               </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >2 to 1       </td>
+             <td colspan = '6' class = 'tile   oddsLabel ce' >Pays 1 to 1  </td>
+             <td colspan = '2' class = 'tile   oddsLabel ce' >2 to 1       </td>
+             <td               class = 'tile border ce'     >$$$               </td> 
+           </tr>
+
+           <tr  >
+ 
+             <td colspan = '3'  class = 'tile border ce' >$$$$$$$$       </td> 
+             <td colspan = '10'  rowspan = '1' class = 'tile fieldbackground ce' >3    5    9    10    11</td>
+             <td colspan = '3'  class = 'tile border le' >$$$$$$$$       </td>
+
+           <tr  >
+             <td colspan = '2'  class = 'tile'               >           </td>
+             <td colspan = '12'  class = 'tile border ce'    >$$$$$$$$$$$$$$$$$$$$$$$$$$$$</td>
+             <td colspan = '2'  class = 'tile'               >           </td>
+           </tr>
+
+      </table>
+      </div>
+
+      <div   id = 'dice'
+      <table > <table border= 0 >
+              <tr class = "diceBackgroundColor" >
+                  <td  colspan = '1'    
+                       <a  id     =  "firstDie">  
+                           <img src="images/dice/die0560.bmp" class = 'dice' alt=" " >  
+                       </a></td> 
+                  <td  colspan = '2'>_____________</td> 
+                  <td  colspan = '1'                          
+                      <a   id     =  "secondDie">   
+                          <img src="images/dice/die0660.bmp"  class = 'dice' alt=" " >   
+                      </a></td>
+              </tr>
+     </table>
+     </div> 
+
+     <table>
+              <tr> 
+                  <td  colspan = '3' rowspan = '3' id='largeLeftDie'> 
+                       <a  id     =  "firstDieLG">  
+                           <img src="images/dice/die0560.bmp" class = 'diceLG' alt=" " >
+                       </a>  
+                      </td>
+                  <td  colspan = '1' rowspan = '3' class = 'blank' >xxxxxxx  
+                 </td>
+                  <td  colspan = '2'> 
+                       <button id = "rollDice"    class = "cntlbttn ce" type = "">Roll Dice   </button> 
+                 </td>
+                  <td  colspan = '2'                 id = 'vacant'               > Total all Bets placed 
+                 </td>
+                  <td  colspan = '2'              class = 'display ce'           >Winnings
+                 </td>
+                  <td  colspan = '1' rowspan = '3' class = 'blank' >xxxxxxx
+                 </td>
+                  <td  colspan = '3' rowspan = '3' id='largeRightDie'> 
+                       <a   id     =  "secondDieLG">   
+                          <img src="images/dice/die0660.bmp" class = 'diceLG' alt=" " >   
+                      </a>
+                 </td>
+             </tr>
+              <tr> 
+                  <td colspan = '2'>
+                       <button id = "clearAllBets" class = "cntlBtn ce" type="submit" >Clear all Bets
+                       </button> 
+                 </td>
+                  <td colspan = '2'>
+                       <button id = 'currentBet' class = "display rj" type="" >$5.00    
+                      </button> 
+                 </td>
+                  <td colspan = '2'>
+                       <button id = 'winnings'   class = "display rj" type="" >$0.00    
+                      </button>  
+                 </td>
+              </tr>
+              <tr> 
+                  <td  colspan = '2'> 
+                       <button id = "restart" class  = "cntlBtn ce" type="submit"  > Restart  
+                      </button>
+                 </td>
+                  <td  colspan = '4' >
+                      <button id = 'message' class  = "display lj" type="" >
+                        <a id = 'msg'> Message xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            </a>
+                     </button>
+                 </td> 
+              </tr>  
+      </table>  
+  
+<!--begin Insert 2 --> 
+
+  <!-- Modal  -->
+
+ <!-- <a class="btn btn-default btn-lg" data-toggle="modal" href="#textModal" >Click for table </a>  --> 
+
+   <div class="modal fade"  id="textModal">
+      <div class ="modal-dialog">
+	<div class="modal-content">
+           <div class="modal-body"> 
+             <form class="form-inline">
+               <div  class="form-group">
+                  <table>
+                      <tr> <td colspan = '3' class='ce'>Possibillities </td>
+                      </tr>
+                      <tr> <td colspan = '3' class='ce'>Note:  Odds based on 36 divided by total numbers bet upon. </td>
+                      </tr>
+                      <tr><td class='lj'> Any single number </td> 
+                          <td>__________</td>
+                          <td class='rj'> pays 36 to 1 </td>
+                      </tr> 
+                
+                  </table>    
+               </div>
+               <button type="submit" class="btn btn-primary" data-dismiss="modal">
+                       Click to dismiss Odds Table
+               </button>
+             </form>
+           </div>
+        </div>
+      </div>
+   </div>
+
+  <!-- End Modal -->
+
+  <!-- end Insert 2 --> 
+      <footer>
+         <ul> <a href ="00index.htm" id = "returnLink"> Return to Main Menu Page</a></ul> 
+         <ul  class   = "footeritem" id = 'copyright' >&copy; 2017 The Mad Thinker  </ul>
+      </footer>
+
+      <!--begin Insert 3 --> 
+      <!--change following js file --> 
+      <script src="javascript/jspage04.js"          ></script> 
+  
+      <script src="http://code.jquery.com/jquery.js"></script>
+    
+      <script src="bootstrap-js/bootstrap.min.js">   </script>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+      <!-- end Insert 3 -->   
+
+    
+  </body> 
+  </center> 
+</html>

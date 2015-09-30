@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!begin Insert 1 --> 
+  <head>
+    
+    <title>Blackjack</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="bootstrap-css/bootstrap.min.css"          rel="stylesheet" media="screen">
+  
+    <link href="bootstrap-css/bootstrap-theme.min.css"    rel="stylesheet" media="screen">
+  
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    
+    <!--[if lt IE 9]>
+      
+    <script src="../../assets/js/html5shiv.js">          </script>
+      
+    <script src="../../assets/js/respond.min.js">        </script>
+    
+    <![endif]-->
+  
+
+    <!-- Change following css file -->
+    <link href="css/main02.css"                           rel="stylesheet" media="screen">
+    
+  </head>
+  
+
+  <!-- Change following id -->
+
+  <center>
+  <body id = 'blackjackPage' >
+  
+  <!-- Navbar -->
+    
+  <div class="navbar navbar-inverse navbar-fixed-top">
+      
+  <div class="container">
+        
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          
+      <span class="icon-bar"></span>
+          
+      <span class="icon-bar"></span>
+          
+      <span class="icon-bar"></span>
+        
+    </button>
+        
+    <a class="navbar-brand text-muted" href="#">Black Jack               </a>
+        
+    <div class="collapse navbar-collapse">
+          
+      <ul class="nav navbar-nav navbar-right">
+                   
+        <li class="dropdown">
+              
+          <a data-toggle="dropdown" data-target="#">Other Games<b class="caret"></b></a>
+    
+          <ul class="dropdown-menu">
+  
+            <li><a href="00index.htm"     >Main Menu                   </a></li>            
+            <li><a href="01poker.htm"     >Video Poker                 </a></li>   
+       <!-- <li><a href="02blackjack.htm" >Blackjack                   </a></li> -->
+            <li><a href="03roulette.htm"  >Roulette                  </a></li>
+            <li><a href="04bankcraps.htm" >Bankcraps                   </a></li>
+            <li><a href="05option5.htm"   >Demolition Roller Derby     </a></li>
+            <li><a href="06option6.htm"   >Mack Truck Chicken Challenge</a></li>
+            <li><a href="07option7.htm"   >AD&D: The Day of Judgement  </a></li>
+            <li><a href="08option8.htm"   >All hope abandon, ye who enter here
+                                                                       </a></li>            
+            <li><a href="09about.htm"     >About Page                  </a></li>                      
+          </ul>
+            
+        </li>
+          
+       </ul>
+        
+     </div>
+      
+    </div>    
+   </div>
+  <!-- End navbar -->
+
+ 
+
+<!end Insert 1 --> 
+
+<h1>"Big Ralph" Williams' House of Black Jack </h1>
+
+<table id = "blackjackGame" border = 0>
+   <tr class = "rowBackground" >
+       <td class = 'card dealersCard' id = 'dealersCard01' > 
+           <img src='decks/standard/999999.jpg' alt=" "  > 
+       </td> 
+       <td class = 'card dealerCard' id = 'dealersCard02'  >
+           <img src='decks/standard/999999.jpg' alt=" "  > 
+       </td> 
+       <td class = 'card dealersCard' id = 'dealersCard03' >
+           <img src='decks/standard/999999.jpg' alt=" "  > 
+       </td>  
+       <td class = 'card dealersCard' id = 'dealersCard04' > 
+           <img src='decks/standard/999999.jpg' alt=" "  > 
+       </td>  
+       <td class = 'card dealersCard' id = 'dealersCard05' >
+           <img src='decks/standard/999999.jpg' alt=" "  > 
+       </td>    
+       <td class = 'card dealersCard' id = 'dealersCard06' >
+           <img src='decks/standard/999999.jpg' alt=" "  >  
+       </td> 
+       <td class = 'card dealersCard' id = 'dealersCard07' >
+           <img src='decks/standard/999999.jpg' alt=" "  >  
+       </td>  
+   </tr >  
+   <tr class = "rowBackground">
+       <td rowspan = '2' colspan = '4'  >
+           <button class="display       lj" id = "messageDisplay" type="" >--      </button>  </td>
+       <td><button class="display label ce" id = 'label3'         type="" >Earnings</button>  </td>
+       <td><button class="display label ce" id = 'label1'         type="" >Dealer's Score</button>  </td>    
+       <td><button class="display score ce" id = "dealerScore"    type="">00       </button>  </td>
+   </tr>
+   <tr class = "rowBackground">
+       <td><button class="display label rj" id = 'earnings'       type="">$0.99    </button>  </td>
+       <td><button class="display label ce" id = 'label2'         type="" >Player's Score</button> </td>   
+       <td><button class="display score ce" id = "playerScore"    type="">00       </button>  </td>
+   </tr>
+
+   <tr class = "rowBackground">
+       <td class = 'card playersCard' id = 'playersCard01' > 
+           <img src="decks/standard/0414SpadesAC.jpg" alt=" " 
+       </td> 
+       <td class = 'card playersCard' id = 'playersCard02' > 
+           <img src="decks/standard/0411SpadesJA.jpg" alt=" " 
+       </td> 
+       <td class = 'card playersCard' id = 'playersCard03' > 
+
+       </td>  
+       <td class = 'card playersCard' id = 'playersCard04' > 
+ 
+       </td>  
+       <td class = 'card playersCard' id = 'playersCard05' > 
+
+       </td>    
+       <td class = 'card playersCard' id = 'playersCard06' > 
+
+       </td>  
+       <td class = 'card playersCard' id = 'playersCard07' > 
+
+       </td>  
+   </tr>
+   <tr class = "rowBackground">
+       <td > <button class="btn" id = "buttonHit"        type="Submit">Hit            </button></td> 
+       <td > <button class="btn" id = "buttonStand"      type="Submit">Stand          </button></td> 
+       <td > <button class="btn" id = "buttonSplit"      type="Submit">Split          </button></td>   
+       <td > <button class="btn" id = "buttonDouble"     type="Submit">Double Down    </button></td>  
+       <td > <button class="btn" id = "buttonPlayAgain"  type="Submit">Play Again     </button></td>    
+       <td > <button class="btn" id = "buttonChangeBet"  type="Submit">Change Bet     </button></td>    
+       <td > <button class="btn" id = "buttonRestart"    type="Submit">Restart        </button></td>  
+   </tr>
+</table>
+
+  <!begin Insert 2 --> 
+
+  <!-- Modal  -->
+
+  <!-- <a class="btn btn-default btn-lg" data-toggle="modal" href="#textModal" >Click for table </a> --> 
+
+   <div class="modal fade"  id="textModal">
+      <div class ="modal-dialog">
+	<div class="modal-content">
+           <div class="modal-body"> 
+             <form class="form-inline">
+               <div  class="form-group">
+                  <table>
+                      <tr> <td colspan = '3' class='ce'>Possibillities </td>
+                      </tr>
+                      <tr> <td colspan = '3' class='ce'>Note:  Odds based on 36 divided by total numbers bet upon. </td>
+                      </tr>
+                      <tr><td class='lj'> Any single number </td> 
+                          <td>__________</td>
+                          <td class='rj'> pays 36 to 1 </td>
+                      </tr> 
+                
+                  </table>    
+               </div>
+               <button type="submit" class="btn btn-primary" data-dismiss="modal">
+                       Click to dismiss Odds Table
+               </button>
+             </form>
+           </div>
+        </div>
+      </div>
+   </div>
+
+  <!-- End Modal -->
+
+<!end Insert 2 --> 
+  
+
+  <footer>
+  <ul><li class = "footeritem" ><a href="00index.htm" id = "returnLink" >
+                                       Return to Main Menu Page                   </a></li>
+      <li class = "footeritem" id = "copyright" >&copy; 2017 The Mad Thinker          </li>
+  </ul>
+  </footer>
+
+
+
+      <!--begin Insert 3 --> 
+      <!--change following js file --> 
+      <!--<script src="javascript/jspage02.js"          ></script> --> 
+  
+      <script src="http://code.jquery.com/jquery.js"></script>
+    
+      <script src="bootstrap-js/bootstrap.min.js">   </script>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+      <!end Insert 3 -->   
+          
+</body>
+</center>
+</html>

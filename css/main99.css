@@ -1,0 +1,118 @@
+/**  These specifications apply to all pages */
+
+/**  Gives each page or group of pages its name */
+#indexPage          {
+ background-color   :  steelblue;
+}
+
+#pokerPage          {
+ background-color   :  green;
+}
+
+#blackjackPage      {
+  background-color  :  coral;
+}
+
+
+#roulettePage, #bankcrapsPage       {
+ background-color   :  green;
+}
+
+#aboutPage          {
+ background-color   :  coral;
+}
+ 
+#option5Page, #option6Page, #option7Page
+         	    {
+ background-color   :  lightblue;
+}
+ 
+#option8Page	    {
+ background-color   :  orangered;
+}
+
+/**  Sets specifications for h1 and footer */
+
+h1, footer          {
+  text-align        :  center;
+  font-weight       :  bold;
+}
+
+h1                  {
+  font-size         :  2em;
+  margin-top        :  60px;  
+}
+
+/**  Removes leading dots from any lists */
+
+li                  {
+ list-style         :  none;
+}
+
+/*  Allows photos in dummy pages to minimize */
+
+.photo              {
+  max-height        :  100%;
+  max-width         :  100%;
+}
+
+/**************************************
+ *left justifies, centers, or right 
+ justifies any elments with the 
+ requesting claseses
+ **************************************/
+ 
+.lj                 {
+  text-align        :  left;
+}
+
+.ce                 {
+  text-align        :  center;
+}
+
+.rj                 {
+  text-align        :  right;
+}
+
+
+.ju                 {
+  text-align        :  justify;
+}
+
+/********************************
+ Sets footer features
+ ********************************/
+
+footer              {
+ margin-top         :  10px;
+}
+
+/********************************
+ Sets features for certain elements
+ ********************************/
+
+.footeritem, #returnLink, #copyright         
+                    {
+  text-align        :  center;
+  font-weight       :  bold;
+  font-size         :  1em;
+}
+
+/** partial??? media code  **/
+/********************************
+ Sets general features scaling
+ other css files have specific ones
+ ********************************/
+
+@media (max-width:   850px)   {
+  h1, h2            {  
+  font-size         :  1.4em;
+  }
+}
+
+@media (max-width:   550px)   { 
+  h1, h2            {
+  font-size         :  1em;
+  }
+}
+

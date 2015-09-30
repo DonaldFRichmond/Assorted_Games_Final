@@ -1,0 +1,272 @@
+@import url('main99.css');
+
+#dice             {
+ margin-top       : 10px;
+}
+
+img               {
+ width            : 40px;
+ height           : 40px; 
+ min-width        : 40px;
+ min-height       : 40px; 
+}
+
+.diceBackgroundColor {
+ background-color : seagreen;
+ width            : 150px;
+}
+
+.tile              { 
+ max-height        :  35px;
+}
+
+.blank             {
+ color             :  green;
+}
+
+.border             {
+ background-color   :  red;
+ color              :  gold;
+ font-size          :  1em;
+}
+
+.labelSD            {
+  background-color  :  red;
+  font-size         :  1.7em;
+}   
+
+.oddsLabel          {
+  background-color  :  white;
+  font-size         :  .8em;
+}  
+
+.fieldbackground    {
+ background-color   :  lightblue;
+ font-size          :  2.1em;
+}
+
+.lbl                {
+ font-size          :  1.1em;
+}
+  
+#bet03Left          {
+ width:  100%; height: 100%;
+}
+  
+.bttn                {
+  background-color  :  blue;
+  font-style        :  bold;
+  font-size         :  1.2em;
+/*  height            :  100%;
+  width             :  100%; */
+  color             :  white;
+ }
+
+.display, .labelx   {
+  background-color  :  white;
+  font-size         :  1.2em;
+  height            :   25px;
+}
+
+.cntlbttn            {
+  font-style        :  bold;
+  height            :  30px;
+  width             :  100%; 
+ }
+
+#rollDice           {
+
+  background-color  :  blue;
+  color             :  white;
+  width             :  100%;
+}
+
+#clearAllBets       {
+  background-color  :  yellow;
+  color             :  black;
+  width             :  100%;
+}
+
+#restart            {
+  background-color  :  black;
+  color             :  white;
+  width             :  100%;
+}
+
+#rollDice, #clearAllBets, #restart
+                    {
+  font-style        :  bold;
+  font-size         :  1.5em;
+}
+ 
+#winnings           {
+  background-color  :  coral;
+  height            :  30px;
+  width             :  100%;
+}   
+    
+#currentBet         {
+  background-color  :  white;
+  height            :  30px;
+  width             :  100%;
+}   
+
+#message            {
+  background-color  :  white;
+  height            :  30px;
+  width             :  100%;
+  color             :  black;
+  font-style        :  bold;
+}
+  
+#vacant             {
+  background-color  :  black;
+  color             :  white;
+  text-align        :  center;
+  font-size         :  1.5em;
+}   
+   
+#leftField, #rightField, #Twoor12  
+                    {
+ font-size          :  1em; 
+}
+
+#Twoor12            {
+ background-color   :  steelblue;
+ font-size          :  2em; 
+}
+ 
+.rr                 {
+ -webkit-transform  : rotate(90deg);
+} 
+
+.rl                 {
+ -webkit-transform  : rotate(270deg);
+}
+
+.rr, .rl            {
+ height             : 100%;
+ width              : 100%; 
+}
+
+.xl                 {
+ width              : 150%;
+ margin-left        : -15px;
+}
+  
+#msg                {
+ color              : black;
+ font-style:        : bold;
+}
+  
+
+#craps, #number07, #number11, #doubles,
+#double02, #double04, #double06, #double08, #double10, #double12, #leftField, #rightField,   
+#bet03Left, #bet04Left, #bet05Left, #bet06Left, #bet08Left, #bet09Left, #bet10Left,
+#bet03Right, #bet04Right, #bet05Right, #bet06Right, #bet08Right, #bet09Right, #bet10Right,
+#crapsST, #number07ST, #number11ST, #doublesST,
+#double02ST, #double04ST, #double06ST, #double08ST, #double10ST, #double12ST,   
+#bet03ST, #bet04ST, #bet05ST, #bet06ST, #bet08ST, #bet09ST, #bet10ST, #fieldST
+                    {
+ width              :  100%;
+ height             :  160%; 
+}
+
+.footeritem, #returnLink, #copyright         
+                    {
+  text-align        :  center;
+  font-weight       :  bold;
+  font-size         :  1em;
+  color             :  white;
+} 
+
+@media (max-width: 720px)   /* small table visible only  */
+                    {    
+   #largeTable      {
+	display     :  none; 
+  }
+   .labelx, .oddsLabel {
+        font-size   :  .8em;
+  }
+    #msg              {
+        color       :  black;
+     font-style     :  bold;
+  }
+   .border          {
+    font-size       :  .8em; 
+  }
+  h1                {
+    display         :  none;
+  }
+  
+  #smallTable       {
+   margin-top       :  55px;
+  }
+}	
+  
+@media (min-width: 721px)   /* large table visible only  */
+                    {
+   #smallTable      {
+	display     :  none; 
+  }
+  .labelx, .oddsLabel, #fieldST, 
+  .rr,     .rl      {
+        font-size   :  .8em;
+  }
+   .border          {
+    font-size       :  .8em;
+  }
+}
+  
+@media (max-width: 920px)   {
+   #rollDice, #clearAllBets, #restart, #vacant, .display, 
+   .label, .oddsLabel, .bttn
+                    {
+    font-size       :  .8em;
+   }
+   .fieldbackground, #fieldST., .lbl {
+    font-size       :  1em;
+   } 
+  img               {
+    height          : 30px;
+    width           : 30px;   
+  }
+  .rr, .rl            {
+   font-size        : .7em; 
+  }
+}	
+
+@media (min-width: 1060px)   {   
+   .border          {
+    font-size       :  1.2em;
+  }
+}
+
+@media (min-width: 1200px)   {   
+   .border          {
+    font-size       :  1.4em;
+  }
+   .oddsLabel, .lbl {      
+     font-size      :  1.1em;
+  } 
+}
+   
+@media (min-width: 1200px)   {   
+   #dice            {
+    display         :  none;
+  } 
+   .diceLG          {
+     width            : 100px;  
+     height           : 100px; 
+     min-width        : 100px;
+     min-height       : 100px; 
+  }
+}
+   
+@media (max-width: 1201px)   {   
+   #largeLeftDie, #largeRightDie
+                    {
+    display         :  none;
+  } 
+}
+
