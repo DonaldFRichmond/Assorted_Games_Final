@@ -1,0 +1,2 @@
+This repository contains a collection of webpages presenting game options.  ONLY the video poker game really functions--the others have only minimal functionality and DO NOT actually work.
+The index program provides a menu linking to them.  Each game page links to all the other pages as well.
